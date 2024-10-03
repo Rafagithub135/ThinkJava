@@ -1,4 +1,4 @@
-public class ThinkJavaCapter6Exercises {
+public class ThinkJavaChapter6Exercises {
     public static void main(String[] args) {
 //      6.1  System.out.println("boo!") + 7;
 //        The system won't let me run the above code because it is trying to mix a string and an int.
