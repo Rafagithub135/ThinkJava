@@ -1,7 +1,11 @@
 public class ThinkJavaChapter8Practice {
     public static void main(String[] args) {
 //    countdown(15);
-    hanoi(5, "A", "C", "B");
+//    hanoi(5, "A", "C", "B");
+        nLines(5);
+//        forever("hi");
+        factorial(5);
+        isSingleDigit(8);
     }
 
     public static void countdown(int n) {
@@ -39,5 +43,26 @@ public class ThinkJavaChapter8Practice {
             nLines(n - 1);
         }
     }
+
+    public static void forever(String s) {
+        System.out.println(s);
+        forever(s);
+    }
+
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            int recurse = factorial(n - 1);
+            int result = n * recurse;
+            return result;
+        }
+    }
+
+    public static boolean isSingleDigit(int x) {
+        return x > -10 && x < 10;
+    }
+
+
 
 }
