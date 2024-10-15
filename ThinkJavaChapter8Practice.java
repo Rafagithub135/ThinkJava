@@ -1,11 +1,14 @@
 public class ThinkJavaChapter8Practice {
     public static void main(String[] args) {
-//    countdown(15);
-//    hanoi(5, "A", "C", "B");
-        nLines(5);
+//        countdown(10);
+//        hanoi(3, "A", "B", "C");
+//        nLines(5);
 //        forever("hi");
-        factorial(5);
-        isSingleDigit(8);
+//        factorial(5);
+//        isSingleDigit(8);
+//        fibonacci(8);
+//        countup(3);
+        binary(23);
     }
 
     public static void countdown(int n) {
@@ -17,7 +20,7 @@ public class ThinkJavaChapter8Practice {
         }
     }
 
-    public static void hanoi(int n, String start, String end, String temp) {
+    public static void hanoi(int n, String start, String temp, String end) {
         if (n == 1) {
             System.out.println(start + " -> " + end);
         } else {
@@ -49,20 +52,38 @@ public class ThinkJavaChapter8Practice {
         forever(s);
     }
 
-    public static int factorial(int n) {
-        if (n == 0) {
+//    public static int factorial(int n) {
+//        if (n == 0) {
+//            return 1;
+//        }
+//        return n * factorial(n - 1);
+//    }
+
+//    public static boolean isSingleDigit(int x) {
+//        return x > -10 && x < 10;
+//    }
+
+    public static int fibonacci(int n) {
+        if (n == 1 || n == 2) {
             return 1;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+public static void countup(int n) {
+        if (n == 0) {
+            System.out.println("Blastoff!");
         } else {
-            int recurse = factorial(n - 1);
-            int result = n * recurse;
-            return result;
+            countup(n - 1);
+            System.out.println(n);
         }
     }
 
-    public static boolean isSingleDigit(int x) {
-        return x > -10 && x < 10;
+    public static int binary(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        return n % 2 + 10 * binary(n / 2);
     }
-
-
 
 }
