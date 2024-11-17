@@ -19,6 +19,7 @@ public class Card {
         System.out.println(binarySearch(cards, card));
 //        System.out.println(binarySearch(cards, new Card(15, 1)));
         System.out.println(binarySearchRecursive(cards, card, 0, cards.length - 1));
+        searchCard(cards, card);
     }
 
     public static final String[] RANKS = {
