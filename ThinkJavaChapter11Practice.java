@@ -40,15 +40,4 @@ public class ThinkJavaChapter11Practice {
         }
     }
 
-    public class TimeClient {
-        public void main(String[] args) {
-            Time time = new Time(11, 59, 59.9);
-            System.out.println(time.hour);
-            System.out.println(time.getHour());
-            System.out.println(time.minute);
-            System.out.println(time.getMinute());
-            System.out.println(time.second);
-            System.out.println(time.getSecond());
-        }
-    }
 }
