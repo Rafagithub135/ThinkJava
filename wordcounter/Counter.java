@@ -26,11 +26,12 @@ public static void main(String[] args) {
     System.out.printf("The letter 'T' is in the first chapter of A Tale of Two Cities %d time(s).\n", countOfWord(varOne, "T"));
 }
 
-public static void varOne() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter text:");
-    String varOne = scanner.nextLine();
-}
+//public static void varOne() {
+//    Scanner scanner = new Scanner(System.in);
+//    System.out.println("Enter text:");
+//    String varOne = scanner.nextLine();
+//}
+
 public static HashMap<String, Integer> countWords(String str) {
     HashMap<String, Integer> wordCount = new HashMap<>();
     str = str.replaceAll("\\p{Punct}", "");
